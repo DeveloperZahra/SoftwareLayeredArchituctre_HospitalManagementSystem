@@ -32,6 +32,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
 
         }
 
+        // Retrieves a single Doctor based on the provided ID
         public Doctor GetById(int id)
         {
             return _context.Doctors.Find(id);
