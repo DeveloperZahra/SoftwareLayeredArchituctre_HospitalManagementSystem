@@ -42,7 +42,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         public void Update(Doctor doctor)
         {
             _context.Doctors.Update(doctor);  // Mark entity as modified
-            _context.SaveChanges();
+            _context.SaveChanges(); // Save changes to apply the update
         }
 
 
