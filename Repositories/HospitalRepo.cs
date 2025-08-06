@@ -18,6 +18,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
             _context = context;
         }
 
+        // Adds a new Doctor to the database
         public void Add(Doctor doctor)
         {
             _context.Doctors.Add(doctor);
