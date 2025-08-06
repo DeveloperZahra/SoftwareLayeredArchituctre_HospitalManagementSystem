@@ -14,7 +14,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem
     {
         public DbSet<Doctor> Doctors { get; set; } // Represents the Doctors table in the database
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // Configures the database connection settings
         {
             optionsBuilder.UseSqlServer("Data Source=(local); Initial Catalog=HospitalDb; Integrated Security=True; TrustServerCertificate=True");
 
