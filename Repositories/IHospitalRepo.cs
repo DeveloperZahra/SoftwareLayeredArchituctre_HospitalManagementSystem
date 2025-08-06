@@ -9,6 +9,6 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         void Delete(int id); // Deletes a doctor from the database using their ID
         Doctor GetById(int id); // Retrieves a doctor by their unique ID
         List<Doctor> GetDoctors();  // Retrieves a list of all doctors from the database
-        void Update(Doctor doctor);
+        void Update(Doctor doctor);  // Updates an existing doctor's information in the database
     }
 }
