@@ -11,6 +11,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Services
     // HospitalServices implements IHospitalServices and provides higher-level business logic for doctor operations
     internal class HospitalServices : IHospitalServices
     {
+        // Repository interface used to interact with data storage
         private readonly IHospitalRepo _repo;
 
         public HospitalServices(IHospitalRepo repo)
