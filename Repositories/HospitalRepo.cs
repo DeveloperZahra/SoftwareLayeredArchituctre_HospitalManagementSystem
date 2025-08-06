@@ -38,6 +38,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
             return _context.Doctors.Find(id);// Find by primary key
         }
 
+        // Updates an existing Doctor's information in the database
         public void Update(Doctor doctor)
         {
             _context.Doctors.Update(doctor);
