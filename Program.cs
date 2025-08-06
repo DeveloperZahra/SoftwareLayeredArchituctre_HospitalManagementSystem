@@ -14,7 +14,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem
             IHospitalRepo hospitalRepo = new HospitalRepo(context); 
             IHospitalServices hospitalServices = new HospitalServices(hospitalRepo);
 
-
+            // Add sample doctor accounts to the system
             hospitalServices.CreateAccount("Zahra", "CreateAccount");
             hospitalServices.CreateAccount("Sara", "General Practitioner");
             hospitalServices.CreateAccount("Ali", "Psychiatrist");
