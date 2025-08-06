@@ -6,7 +6,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
     public interface IHospitalRepo
     {
         void Add(Doctor doctor); // Adds a new doctor to the database
-        void Delete(int id);
+        void Delete(int id); // Deletes a doctor from the database using their ID
         Doctor GetById(int id);
         List<Doctor> GetDoctors();
         void Update(Doctor doctor);
