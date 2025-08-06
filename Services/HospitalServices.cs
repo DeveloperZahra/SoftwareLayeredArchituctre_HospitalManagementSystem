@@ -15,7 +15,6 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Services
         private readonly IHospitalRepo _repo;
 
         // Constructor that receives a repository via dependency injection
-
         public HospitalServices(IHospitalRepo repo)
         {
             _repo = repo;
