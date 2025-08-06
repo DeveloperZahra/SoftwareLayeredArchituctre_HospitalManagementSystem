@@ -31,6 +31,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Services
             };
         }
 
+        // Retrieves all doctors from the repository
         public IEnumerable<Doctor> GetAllDoctors()
 
         {
