@@ -52,7 +52,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
             var abc = GetById(id); // Retrieve the doctor to be deleted
             if (abc != null)
             {
-                _context.Doctors.Remove(abc);
+                _context.Doctors.Remove(abc); // Remove from context
                 _context.SaveChanges();
             }
         }
