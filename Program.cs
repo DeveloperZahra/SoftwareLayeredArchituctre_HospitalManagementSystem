@@ -10,7 +10,8 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem
             using HospitalDbContext context = new HospitalDbContext();   // Create a new instance of the database context
             context.Database.EnsureCreated(); // Ensure the database is created (only creates if it doesn't exist)
 
-            IHospitalRepo hospitalRepo = new HospitalRepo(context);
+            // Set up the repository and service layer
+            IHospitalRepo hospitalRepo = new HospitalRepo(context); 
             IHospitalServices hospitalServices = new HospitalServices(hospitalRepo);
 
 
