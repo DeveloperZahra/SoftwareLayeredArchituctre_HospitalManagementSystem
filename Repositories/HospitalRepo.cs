@@ -53,7 +53,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
             if (abc != null)
             {
                 _context.Doctors.Remove(abc); // Remove from context
-                _context.SaveChanges();
+                _context.SaveChanges();  // Save changes to apply the deletion
             }
         }
     }
