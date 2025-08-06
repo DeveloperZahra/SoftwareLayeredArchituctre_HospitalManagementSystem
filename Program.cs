@@ -1,10 +1,35 @@
-﻿namespace SoftwareLayeredArchituctre_HospitalManagementSystem
+﻿using SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories;
+using SoftwareLayeredArchituctre_HospitalManagementSystem.Services;
+
+namespace SoftwareLayeredArchituctre_HospitalManagementSystem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using HospitalDbContext context = new HospitalDbContext();   // Create a new instance of the database context
+            context.Database.EnsureCreated();
+
+            IHospitalRepo hospitalRepo = new HospitalRepo(context);
+            IHospitalServices hospitalServices = new HospitalServices(hospitalRepo);
+
+
+            hospitalServices.CreateAccount("Zahra", "CreateAccount");
+            hospitalServices.CreateAccount("Sara", "General Practitioner");
+            hospitalServices.CreateAccount("Ali", "Psychiatrist");
+
+            foreach (var abc in hospitalServices.GetAllDoctors())
+            {
+
+                Console.WriteLine($" {abc.Id} - {abc.HolderName} - {abc.Specialty} ");
+            }
+
+
+            
+
+
+
+
         }
     }
 }
