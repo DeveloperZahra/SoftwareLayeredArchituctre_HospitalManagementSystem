@@ -12,7 +12,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem
     // enabling interaction with the database using Entity Framework Core
     internal class HospitalDbContext: DbContext
     {
-        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Doctor> Doctors { get; set; } // Represents the Doctors table in the database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
