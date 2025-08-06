@@ -19,6 +19,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem
             hospitalServices.CreateAccount("Sara", "General Practitioner");
             hospitalServices.CreateAccount("Ali", "Psychiatrist");
 
+            // Retrieve and display all doctors from the database
             foreach (var abc in hospitalServices.GetAllDoctors())
             {
 
