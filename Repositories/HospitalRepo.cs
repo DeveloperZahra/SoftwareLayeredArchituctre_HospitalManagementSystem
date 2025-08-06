@@ -22,7 +22,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         public void Add(Doctor doctor)
         {
             _context.Doctors.Add(doctor);
-            _context.SaveChanges();
+            _context.SaveChanges(); // Save changes to persist the new doctor
         }
 
         public List<Doctor> GetDoctors()
