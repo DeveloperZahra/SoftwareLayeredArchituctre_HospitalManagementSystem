@@ -14,6 +14,10 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Models
 
         [Key]
         public int Id { get; set; }
+
+        // Require 'HolderName' to be provided, and enforce a naming pattern:
+        // must start with an uppercase letter and may contain letters and spaces
+
         [Required]
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         public string HolderName { get; set; }
