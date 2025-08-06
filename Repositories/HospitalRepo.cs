@@ -46,7 +46,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         }
 
 
-
+        // Deletes a Doctor from the database based on ID
         public void Delete(int id)
         {
             var abc = GetById(id);
