@@ -14,6 +14,8 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Services
         // Repository interface used to interact with data storage
         private readonly IHospitalRepo _repo;
 
+        // Constructor that receives a repository via dependency injection
+
         public HospitalServices(IHospitalRepo repo)
         {
             _repo = repo;
