@@ -21,6 +21,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Services
 
         }
 
+        // Creates a new doctor account and adds it to the repository
         public void CreateAccount(string holdername, string DSpecialty)
         {
             var abc = new Doctor
