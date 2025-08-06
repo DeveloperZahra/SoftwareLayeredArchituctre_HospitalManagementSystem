@@ -25,6 +25,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
             _context.SaveChanges(); // Save changes to persist the new doctor
         }
 
+        // Retrieves a list of all doctors from the database
         public List<Doctor> GetDoctors()
         {
             return _context.Doctors.ToList();
