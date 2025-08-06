@@ -12,7 +12,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
     {
         private readonly HospitalDbContext _context;   // Readonly instance of the database context used to interact with the database
 
-
+        // Constructor that receives a HospitalDbContext instance via dependency injection
         public HospitalRepo(HospitalDbContext context)
         {
             _context = context;
