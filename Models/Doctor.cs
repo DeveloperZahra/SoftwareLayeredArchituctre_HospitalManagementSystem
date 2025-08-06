@@ -10,6 +10,8 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Models
     // Define the Doctor class to represent a doctor entity in the system
     public class Doctor
     {
+        // Mark 'Id' as the primary key of the Doctor entity
+
         [Key]
         public int Id { get; set; }
         [Required]
