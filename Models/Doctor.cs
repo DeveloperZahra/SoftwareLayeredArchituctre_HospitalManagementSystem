@@ -22,7 +22,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Models
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         public string HolderName { get; set; }
 
-        public string Specialty { get; set; }
+        public string Specialty { get; set; }  // Store the medical specialty of the doctor (e.g., Cardiology, Pediatrics)
 
     }
 }
