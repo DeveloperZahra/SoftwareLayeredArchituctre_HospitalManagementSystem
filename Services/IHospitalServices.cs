@@ -6,6 +6,6 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Services
     internal interface IHospitalServices
     {
         void CreateAccount(string holdername, string DSpecialty);  // Creates a new doctor account with the provided name and specialty
-        IEnumerable<Doctor> GetAllDoctors();
+        IEnumerable<Doctor> GetAllDoctors();  // Retrieves a collection of all doctors
     }
 }
