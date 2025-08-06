@@ -49,7 +49,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         // Deletes a Doctor from the database based on ID
         public void Delete(int id)
         {
-            var abc = GetById(id);
+            var abc = GetById(id); // Retrieve the doctor to be deleted
             if (abc != null)
             {
                 _context.Doctors.Remove(abc);
