@@ -41,7 +41,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         // Updates an existing Doctor's information in the database
         public void Update(Doctor doctor)
         {
-            _context.Doctors.Update(doctor);
+            _context.Doctors.Update(doctor);  // Mark entity as modified
             _context.SaveChanges();
         }
 
