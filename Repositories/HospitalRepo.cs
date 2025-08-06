@@ -28,7 +28,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
         // Retrieves a list of all doctors from the database
         public List<Doctor> GetDoctors()
         {
-            return _context.Doctors.ToList();
+            return _context.Doctors.ToList(); // Return all doctors as a list
 
         }
 
