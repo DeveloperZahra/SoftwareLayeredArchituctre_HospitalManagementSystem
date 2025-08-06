@@ -2,6 +2,7 @@
 
 namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
 {
+    // Interface defining contract for Doctor repository operations
     public interface IHospitalRepo
     {
         void Add(Doctor doctor);
