@@ -10,7 +10,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem.Repositories
     // HospitalRepo implements IHospitalRepo interface and handles CRUD operations for Doctor entities
     class HospitalRepo : IHospitalRepo
     {
-        private readonly HospitalDbContext _context;
+        private readonly HospitalDbContext _context;   // Readonly instance of the database context used to interact with the database
 
 
         public HospitalRepo(HospitalDbContext context)
