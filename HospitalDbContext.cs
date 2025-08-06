@@ -16,7 +16,7 @@ namespace SoftwareLayeredArchituctre_HospitalManagementSystem
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // Configures the database connection settings
         {
-            optionsBuilder.UseSqlServer("Data Source=(local); Initial Catalog=HospitalDb; Integrated Security=True; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Data Source=(local); Initial Catalog=HospitalDb; Integrated Security=True; TrustServerCertificate=True");  // Use SQL Server with the specified connection string
 
 
         }
